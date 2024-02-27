@@ -1,18 +1,19 @@
-TITLE Program Template     (template.asm)
+TITLE Generate Sort Count     (Proj5_Spiivaka.asm)
 
 ; Author: Adam Spivak
-; Last Modified:
-; OSU email address: ONID_ID@oregonstate.edu
+; Last Modified: 3-3-24
+; OSU email address: Spivaka@oregonstate.edu
 ; Course number/section: CS271 Section 271
-; Project Number:                 Due Date:
-; Description: This file is provided as a template from which you may work
-;              when developing assembly projects in CS271.
+; Project Number: Proj5_Spivaka           Due Date: 3-3-24
+; Description:	This program utilizes Lists, the program stack, and Procedure parameters to generate a list of random numbers, sorts them,
+;				then finds the median and counts and displays each time a number is seen in the list 
+
 
 INCLUDE Irvine32.inc
 
-; (insert macro definitions here)
-
-; (insert constant definitions here)
+ARRAYSIZE = 200
+LO = 15
+HI = 50
 
 .data
 
@@ -20,7 +21,7 @@ INCLUDE Irvine32.inc
 
 .code
 ;-----------------------------------------------------------------------------------------------------------
-; Name:
+; Name: main
 ; Description:
 ; Preconditions:
 ; Postcondition:
@@ -34,6 +35,119 @@ main PROC
 	Invoke ExitProcess,0	; exit to operating system
 main ENDP
 
-; (insert additional procedures here)
+;-----------------------------------------------------------------------------------------------------------
+; Name: Introduction
+; Description:
+; Preconditions:
+; Postcondition:
+; Recieves:
+;		[EBP + 8]	= Description
+;		[EBP + 12]	= Author name
+;		[EBP + 16]	= Title
+; Return:
+;-----------------------------------------------------------------------------------------------------------
+introduction PROC USES EDX EDX
+	PUSH EBP
+	MOV	 EBP, ESP
+
+	POP  EBP
+	RET	 0			; Deference n numbers from parameters pushed to the stack
+introduction ENDP
+
+;-----------------------------------------------------------------------------------------------------------
+; Name:
+; Description:
+; Preconditions:
+; Postcondition:
+; Recieves:
+; Return:
+;-----------------------------------------------------------------------------------------------------------
+fillArray PROC
+	PUSH EBP
+	MOV	 EBP, ESP
+
+	POP  EBP
+	RET	 0			; Deference n numbers from parameters pushed to the stack
+fillArray ENDP
+
+;-----------------------------------------------------------------------------------------------------------
+; Name:
+; Description:
+; Preconditions:
+; Postcondition:
+; Recieves:
+; Return:
+;-----------------------------------------------------------------------------------------------------------
+sortList PROC
+	PUSH EBP
+	MOV	 EBP, ESP
+
+	POP  EBP
+	RET	 0			; Deference n numbers from parameters pushed to the stack
+sortList ENDP
+
+;-----------------------------------------------------------------------------------------------------------
+; Name:
+; Description:
+; Preconditions:
+; Postcondition:
+; Recieves:
+; Return:
+;-----------------------------------------------------------------------------------------------------------
+exchangeElements PROC
+	PUSH EBP
+	MOV	 EBP, ESP
+
+	POP  EBP
+	RET	 0			; Deference n numbers from parameters pushed to the stack
+exchangeElements ENDP
+
+;-----------------------------------------------------------------------------------------------------------
+; Name:
+; Description:
+; Preconditions:
+; Postcondition:
+; Recieves:
+; Return:
+;-----------------------------------------------------------------------------------------------------------
+displayedMedian PROC
+	PUSH EBP
+	MOV	 EBP, ESP
+
+	POP  EBP
+	RET	 0			; Deference n numbers from parameters pushed to the stack
+displayedMedian ENDP
+
+;-----------------------------------------------------------------------------------------------------------
+; Name:
+; Description:
+; Preconditions:
+; Postcondition:
+; Recieves:
+; Return:
+;-----------------------------------------------------------------------------------------------------------
+displayedList PROC
+	PUSH EBP
+	MOV	 EBP, ESP
+
+	POP  EBP
+	RET	 0			; Deference n numbers from parameters pushed to the stack
+displayedList ENDP
+
+;-----------------------------------------------------------------------------------------------------------
+; Name:
+; Description:
+; Preconditions:
+; Postcondition:
+; Recieves:
+; Return:
+;-----------------------------------------------------------------------------------------------------------
+countList PROC
+	PUSH EBP
+	MOV	 EBP, ESP
+
+	POP  EBP
+	RET	 0			; Deference n numbers from parameters pushed to the stack
+countList ENDP
 
 END main
