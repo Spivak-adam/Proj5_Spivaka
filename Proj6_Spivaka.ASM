@@ -18,6 +18,8 @@ INCLUDE Irvine32.inc
 
 main PROC
 
+
+	Provoke Exit
 main ENDP
 
-main End
+END main
