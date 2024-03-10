@@ -15,3 +15,9 @@ INCLUDE Irvine32.inc
 
 
 .code
+
+main PROC
+
+main ENDP
+
+main End
